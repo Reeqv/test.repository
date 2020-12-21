@@ -4,17 +4,14 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 14px;
-  }
-p{
+}
+
+p { 
     margin: 0;
 }
 .container__menu {
     visibility: hidden;
 } 
-
-.clr{
-    clear:both;
-}
 .container__block1-left {
     background-image: url(../img/bgPhoto/manJacket.jpg);
     background-size: cover;
@@ -29,8 +26,12 @@ p{
 }
 .container__menu-list{
     list-style: none;
+    margin: 0;
 }
-
+.container__menu-list-item a{
+    text-decoration: none;
+    color: #6F6E6E;
+}
 .container__block2-item1{
     background: url(../img/bgPhoto/forWomen.jpg);
     background-size: cover; 
@@ -85,9 +86,34 @@ p{
     border: 1px solid #FFFFFF;
     display:flex;    
 }
-.container__block5{
+.footer{
     background: #222224;
 }
-.container__block5-item{
+.footer__block1-item{
     color: #FBFBFB;
+}
+.footer__block2{
+    background-image: url(../img/bgPhoto/subscribe.jpg);
+}
+.footer__block2-overlay{
+    background: rgba(244, 244, 244, 0.7);
+}
+.footer__block2-button-send{
+    border: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: #FFFFFF;
+    background-color: #F16D7F;
+}
+.footer__block2-button-text{
+    border: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.footer__block3{
+    background: #222224;
+}
+.footer__block3-text{
+    color: #FBFBFB;
+    font-size: 16px;
 }
