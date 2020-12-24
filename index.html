@@ -5,203 +5,216 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/screen.css">
+    <link rel="stylesheet" href="css/style_new.css">
+    <!-- <link rel="stylesheet" href="css/screen.css"> -->
     <!-- <link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/phone.css"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
 </head>
-<header>
-        <div class="header widthFull">
-        <div class="header__container widthFull">
-            <div class="header__left margin_left">
-                <a href="#" class="header__logo "><img src="img/icons/logo.svg" alt="Logo"></a>
-                <a href="#" class="header__search"><img src="img/icons/magnifier.svg" alt="Search"></a>
-            </div>
-            <ul class="header__list margin_right">
-                <li class="header__list-item iconMenu"><a href="#"><img src="img/icons/menu.svg" alt="Menu"></a></li>
-                <li class="header__list-item iconProfile"><a href="#"><img src="img/icons/profile.svg" alt="Profile"></a></li>
-                <li class="header__list-item iconShopcart"><a href="#">
-                    <div class="shopCart"><img src="img/icons/cart.svg" alt="ShopCart">
-                        <p class="shopCart-count">5</p></a>
+
+<body>
+
+    <header class="header widthContent addPadding flexDefault">
+        <h1 class = "header__title notDisplay">HEADER</h1>
+        <div class="header__logo">
+            <a href="#" class="header__logo "><img src="img/icons/logo.svg" alt="Logo"></a>
+            <a href="#" class="header__search"><img src="img/icons/magnifier.svg" alt="Search"></a>
+        </div>
+            <ul class="header__list flexDefault">
+                <li class="header__list-item"><a href="#"><img src="img/icons/menu.svg" alt="Menu"></a></li>
+                <li class="header__list-item"><a href="#"><img src="img/icons/profile.svg" alt="Profile"></a></li>
+                <li class="header__list-item"><a href="#">
+                    <div class="header__cart">
+                        <img src="img/icons/cart.svg" alt="ShopCart">
+                        <p class="header__cart-count">5</p></a>
                     </div>
                 </li>
             </ul>
-        </div>
-    </div>
-</header>
+    </header>
 
-<body>
-    <div class="container">
+    <nav class="nav hidden">
+        <ul class=nav__list>
+            <li class=nav__list-button>
+                <button>
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.4158 6.00409L11.7158 1.71409C11.9041 1.52579 12.0099 1.27039 12.0099 1.00409C12.0099 0.73779 11.9041 0.482395 11.7158 0.294092C11.5275 0.105788 11.2721 0 11.0058 0C10.7395 0 10.4841 0.105788 10.2958 0.294092L6.0058 4.59409L1.7158 0.294092C1.52749 0.105788 1.2721 -1.9841e-09 1.0058 0C0.739497 1.9841e-09 0.484102 0.105788 0.295798 0.294092C0.107495 0.482395 0.0017066 0.73779 0.0017066 1.00409C0.0017066 1.27039 0.107495 1.52579 0.295798 1.71409L4.5958 6.00409L0.295798 10.2941C0.20207 10.3871 0.127676 10.4977 0.0769072 10.6195C0.0261385 10.7414 0 10.8721 0 11.0041C0 11.1361 0.0261385 11.2668 0.0769072 11.3887C0.127676 11.5105 0.20207 11.6211 0.295798 11.7141C0.388761 11.8078 0.499362 11.8822 0.621222 11.933C0.743081 11.9838 0.873786 12.0099 1.0058 12.0099C1.13781 12.0099 1.26852 11.9838 1.39038 11.933C1.51223 11.8822 1.62284 11.8078 1.7158 11.7141L6.0058 7.41409L10.2958 11.7141C10.3888 11.8078 10.4994 11.8822 10.6212 11.933C10.7431 11.9838 10.8738 12.0099 11.0058 12.0099C11.1378 12.0099 11.2685 11.9838 11.3904 11.933C11.5122 11.8822 11.6228 11.8078 11.7158 11.7141C11.8095 11.6211 11.8839 11.5105 11.9347 11.3887C11.9855 11.2668 12.0116 11.1361 12.0116 11.0041C12.0116 10.8721 11.9855 10.7414 11.9347 10.6195C11.8839 10.4977 11.8095 10.3871 11.7158 10.2941L7.4158 6.00409Z" fill="#6F6E6E"/>
+                    </svg>                    
+                </button>
+            </li>
+            <li>
+                <h2 class="nav__title">MENU</h2>
+            </li>
+            <li>
+                <h3 class="nav__list-subtitle colorPink">MAN</h3>
+                <ul class="nav__list-sublist">
+                    <li><a class="nav__item-link" href="#">T-Shirts</a></li>
+                    <li><a class="nav__item-link" href="#">Accessories</a></li>
+                    <li><a class="nav__item-link" href="#">Bags</a></li>
+                    <li><a class="nav__item-link" href="#">Denim</a></li>
+                </ul>
+            </li>
+            <li>
+                <h3 class="nav__list-subtitle colorPink">WOMAN</h3>
+                <ul class="nav__list-sublist">
+                    <li><a class="nav__item-link" href="#">Accessories</a></li>
+                    <li><a class="nav__item-link" href="#">Jackets & Coats</a></li>
+                    <li><a class="nav__item-link" href="#">Polos</a></li>
+                    <li><a class="nav__item-link" href="#">T-Shirts</a></li>
+                    <li><a class="nav__item-link" href="#">Shirts</a></li>
+                </ul>                        
+            </li>
+            <li>
+                <h3 class="nav__list-subtitle colorPink">KIDS</h3>
+                <ul class="nav__list-sublist">
+                    <li><a class="nav__item-link" href="#">Accessories</a></li>
+                    <li><a class="nav__item-link" href="#">Jackets & Coats</a></li>
+                    <li><a class="nav__item-link" href="#">Polos</a></li>
+                    <li><a class="nav__item-link" href="#">T-Shirts</a></li>
+                    <li><a class="nav__item-link" href="#">Shirts</a></li>
+                    <li><a class="nav__item-link" href="#">Bags</a></li>                    
+                </ul>                             
+            </li>
+        </ul>           
+    </nav>         
 
-        <div class="container__block1 widthFull">
-            
-            <div class="container__block1-left widthHalf"></div>
-            <div class="container__block1-right widthHalf">                
-                <div class="container__block1-right-bar"><p class="a"></div>        
-                <div class="container__block1-text">    
-                    <p class="container__block1-text1">THE BRAND</p>
-                    <p class="container__block1-text2">OF&nbsp;LUXERIOUS&nbsp;<span class=colored>FASHION</span></p>
-                                        
-                </div>
-                <div class="container__menu">
-                    <h2 class="container__menu-item">MENU</h2>
-                    <h2 class="container__menu-item colored">MAN</h2>
-                    <ul class="container__menu-list">
-                        <li class="container__menu-list-item"><a href="#">Accessories</a></li>
-                        <li class="container__menu-list-item"><a href="#">Bags</a></li>
-                        <li class="container__menu-list-item"><a href="#">Denim</a></li>
-                        <li class="container__menu-list-item"><a href="#">T-Shirts</a></li>
-                    </ul>
-                    <h2 class="container__menu-item colored">WOMAN</h2>
-                    <ul class="container__menu-list">
-                        <li class="container__menu-list-item"><a href="#">Accessories</a></li>
-                        <li class="container__menu-list-item"><a href="#">Jackets & Coats</a></li>
-                        <li class="container__menu-list-item"><a href="#">Polos</a></li>
-                        <li class="container__menu-list-item"><a href="#">T-Shirts</a></li>
-                        <li class="container__menu-list-item"><a href="#">Shirts</a></li>
-                    </ul>
-                    <h2 class="container__menu-item colored">Kids</h2>
-                    <ul class="container__menu-list">
-                        <li class="container__menu-list-item"><a href="#">Accessories</a></li>
-                        <li class="container__menu-list-item"><a href="#">Jackets & Coats</a></li>
-                        <li class="container__menu-list-item"><a href="#">Polos</a></li>
-                        <li class="container__menu-list-item"><a href="#">T-Shirts</a></li>
-                        <li class="container__menu-list-item"><a href="#">Shirts</a></li>
-                        <li class="container__menu-list-item"><a href="#">Bags</a></li>                    
-                    </ul>                
-                </div>
-            </div>
+    <section class="brand widthFull flexDefault">            
+        <img src="img/bgPhoto/manJacket.jpg" alt="manJacket" class="brand__image">            
+        <div class="brand__title">    
+            <h1 class="brand__title-text1">THE BRAND</h1>
+            <p class="brand__title-text2">OF LUXERIOUS <span class=colorPink>FASHION</span></p>                                        
         </div>
-        <div class="container__block2">
-            <div class="container__block2-item container__block2-item1">
-                <div class="container__block2-item-textbox">
-                    <p class="container__block2-item-text1">30% OFF</p>
-                    <p class="container__block2-item-text2 colored">FOR WOMEN</p>  
+    </section>
+
+    <section class="deals">
+        <h1 class="deals__title notDisplay">Deals</h1>
+        <ul class="deals__list widthContent flexDefault">
+            <li class="deals__list-item flexDefault">
+                <div class="deals__overlay flexDefault flexColumn">
+                    <p class="deals__overlay-text1">30% OFF</p>
+                    <p class="deals__overlay-text2 colorPink">FOR WOMEN</p>  
                 </div>
-            </div>
-            <div class="container__block2-item container__block2-item2">
-                <div class="container__block2-item-textbox">
-                    <p class="container__block2-item-text1">HOT DEAL</p>
-                    <p class="container__block2-item-text2 colored">FOR MEN</p>
+            </li>
+            <li class="deals__list-item flexDefault ">
+                <div class="deals__overlay flexDefault flexColumn">
+                    <p class="deals__overlay-text1">HOT DEAL</p>
+                    <p class="deals__overlay-text2 colorPink">FOR MEN</p>
                 </div>
-            </div>
-            <div class="container__block2-item container__block2-item3">
-                <div class="container__block2-item-textbox">
-                    <p class="container__block2-item-text1">NEW ARRIVALS</p>
-                    <p class="container__block2-item-text2 colored">FOR KIDS</p>
+            </li>
+            <li class="deals__list-item flexDefault">
+                <div class="deals__overlay flexDefault flexColumn">
+                    <p class="deals__overlay-text1">NEW ARRIVALS</p>
+                    <p class="deals__overlay-text2 colorPink">FOR KIDS</p>
                 </div>
-            </div>
-            <div class="container__block2-item container__block2-item4">
-                <div class="container__block2-item-textbox container__block2-item-textbox4">
-                    <p class="container__block2-item-text1">LUXIROUS & TRENDY</p>
-                    <p class="container__block2-item-text2 colored">ACCESORIES</p>
+            </li>
+            <li class="deals__list-item flexDefault">
+                <div class="deals__overlay flexDefault flexColumn">
+                    <p class="deals__overlay-text1">LUXEROUS & TRENDY</p>
+                    <p class="deals__overlay-text2 colorPink">ACCESORIES</p>
                 </div>
-            </div>
-        </div>  
-        <div class="container__block3">
-            <p class="container__block3-text1">Featured Items</p>
-            <p class="container__block3-text2">Shop for items based on what we featured in this week</p>                
-        </div>  
-        <div class="container__block4">
-            <div class="container__block4-item container__block4-item-1">
+            </li>
+        </ul>    
+    </section>  
+
+    <section class="featured">
+        <h1 class="featured__title">Featured Items</h1>
+        <p class="featured__text">Shop for items based on what we featured in this week</p>                        
+            <div class="featured__container featured__container-1">
                 <img src="img/products/product-1.jpg" alt="product-1">
-                <p class="container__block4-item-text1 container__block4-item-text">ELLERY X M'O CAPSULE</p>
-                <p class="container__block4-item-text2 container__block4-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                <p class="container__block4-item-text3 container__block4-item-text colored">$52.00</p>
-                <div class="container__block4-item-overlay container__block4-item-overlay-1">
-                    <div class="container__block4-item-overlay-cart">
+                <p class="featured__container-text featured__container-text1">ELLERY X M'O CAPSULE</p>
+                <p class="featured__container-text featured__container-text2">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="featured__container-text featured__container-text3 colored">$52.00</p>
+                <div class="featured__container-overlay featured__container-overlay1">
                         <img src="./img/icons/cart.svg" alt="ShopCart">
-                        <p class="container__block4-item-overlay-cart-text">Add to Cart</p>
-                    </div>
+                        <p class="featured__container-cart-text">Add to Cart</p>
                 </div>
             </div>
-            <div class="container__block4-item container__block4-item-2">
-                <div class="container__block4-item2-image">
+            <div class="featured__container featured__container-2">
+                <div class="featured__container-image">
                     <img src="img/products/product-2.png" alt="product-2">
                 </div>                    
-                <p class="container__block4-item-text1 container__block4-item-text">ELLERY X M'O CAPSULE</p>
-                <p class="container__block4-item-text2 container__block4-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                <p class="container__block4-item-text3 container__block4-item-text colored">$52.00</p>
-                <div class="container__block4-item-overlay container__block4-item-overlay-2">
-                    <div class="container__block4-item-overlay-cart">
+                <p class="featured__container-text featured__container-text1">ELLERY X M'O CAPSULE</p>
+                <p class="featured__container-text featured__container-text2">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="featured__container-text featured__container-text3 colored">$52.00</p>
+                <div class="featured__container-overlay featured__container-overlay2">
+                    <div class="featured__container-cart">
                         <img src="./img/icons/cart.svg" alt="ShopCart">
-                        <p class="container__block4-item-overlay-cart-text">Add to Cart</p>
+                        <p class="featured__container-cart-text">Add to Cart</p>
                     </div>
                 </div>                    
             </div>
-            <div class="container__block4-item container__block4-item-3">
+            <div class="featured__container featured__container3">
                 <img src="img/products/product-3.jpg" alt="product-3">
-                <p class="container__block4-item-text1 container__block4-item-text">ELLERY X M'O CAPSULE</p>
-                <p class="container__block4-item-text2 container__block4-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                <p class="container__block4-item-text3 container__block4-item-text colored">$52.00</p>
-                <div class="container__block4-item-overlay container__block4-item-overlay-3">
-                    <div class="container__block4-item-overlay-cart">
+                <p class="featured__container-text featured__container-text1">ELLERY X M'O CAPSULE</p>
+                <p class="featured__container-text featured__container-text2">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="featured__container-text featured__container-text3 colored">$52.00</p>
+                <div class="featured__container-overlay featured__container-overlay3">
+                    <div class="featured__container-cart">
                         <img src="./img/icons/cart.svg" alt="ShopCart">
-                        <p class="container__block4-item-overlay-cart-text">Add to Cart</p>
+                        <p class="featured__container-cart-text">Add to Cart</p>
                     </div>
                 </div>  
             </div>
-            <div class="container__block4-item container__block4-item-4">
+            <div class="featured__container featured__container4">
                 <img src="img/products/product-4.jpg" alt="product-4">
-                <p class="container__block4-item-text1 container__block4-item-text">ELLERY X M'O CAPSULE</p>
-                <p class="container__block4-item-text2 container__block4-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                <p class="container__block4-item-text3 container__block4-item-text colored">$52.00</p>
-                <div class="container__block4-item-overlay container__block4-item-overlay-4">
-                    <div class="container__block4-item-overlay-cart">
+                <p class="featured__container-text featured__container-text1">ELLERY X M'O CAPSULE</p>
+                <p class="featured__container-text featured__container-text2">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="featured__container-text featured__container-text3 colored">$52.00</p>
+                <div class="featured__container-overlay featured__container-overlay4">
+                    <div class="featured__container-cart">
                         <img src="./img/icons/cart.svg" alt="ShopCart">
-                        <p class="container__block4-item-overlay-cart-text">Add to Cart</p>
+                        <p class="featured__container-cart-text">Add to Cart</p>
                     </div>
                 </div>  
             </div>
-            <div class="container__block4-item container__block4-item-5">
+            <div class="featured__container featured__container5">
                 <img src="img/products/product-5.jpg" alt="product-5">
-                <p class="container__block4-item-text1 container__block4-item-text">ELLERY X M'O CAPSULE</p>
-                <p class="container__block4-item-text2 container__block4-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                <p class="container__block4-item-text3 container__block4-item-text colored">$52.00</p>
-                <div class="container__block4-item-overlay container__block4-item-overlay-5">
-                    <div class="container__block4-item-overlay-cart">
+                <p class="featured__container-text featured__container-text1">ELLERY X M'O CAPSULE</p>
+                <p class="featured__container-text featured__container-text2">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="featured__container-text featured__container-text3 colored">$52.00</p>
+                <div class="featured__container-overlay featured__container-overlay5">
+                    <div class="featured__container-cart">
                         <img src="./img/icons/cart.svg" alt="ShopCart">
-                        <p class="container__block4-item-overlay-cart-text">Add to Cart</p>
+                        <p class="featured__container-cart-text">Add to Cart</p>
                     </div>
-                 </div>  
+                    </div>  
             </div>
-            <div class="container__block4-item container__block4-item-6">
+            <div class="featured__container featured__container6">
                 <img src="img/products/product-6.jpg" alt="product-6">
-                <p class="container__block4-item-text1 container__block4-item-text">ELLERY X M'O CAPSULE</p>
-                <p class="container__block4-item-text2 container__block4-item-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                <p class="container__block4-item-text3 container__block4-item-text colored">$52.00</p>
-                <div class="container__block4-item-overlay container__block4-item-overlay-6">
-                    <div class="container__block4-item-overlay-cart">
+                <p class="featured__container-text featured__container-text1">ELLERY X M'O CAPSULE</p>
+                <p class="featured__container-text featured__container-text2">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <p class="featured__container-text featured__container-text3 colored">$52.00</p>
+                <div class="featured__container-overlay featured__container-overlay6">
+                    <div class="featured__container-cart">
                         <img src="./img/icons/cart.svg" alt="ShopCart">
-                        <p class="container__block4-item-overlay-cart-text">Add to Cart</p>
+                        <p class="featured__container-cart-text">Add to Cart</p>
                     </div>
                 </div>  
             </div>
-            <a href="#" class=container__block4-browse><p>Browse All Products</p></a>
-        </div>        
-    </div>
-</body>
-<footer>
-    <div class="footer">
-        <div class="footer__block1">
-            <div class="footer__block1-item">
-                <img src="./img/icons/delivery.svg" class = "footer__block1-item-image" alt="Delivery">
-                <p class="footer__block1-item-text1">Free Delivery</p>
-                <p class="footer__block1-item-text2">Worldwide delivery on all. Authorit tively morph next-&nbsp;generation innov tion with extensive models.</p>
-            </div>
-            <div class="footer__block1-item">
-                <img src="./img/icons/sales.svg" class = "footer__block1-item-image" alt="">
-                <p class="footer__block1-item-text1">Sales & discounts</p>
-                <p class="footer__block1-item-text2">Worldwide delivery on all. Authorit tively morph next-&nbsp;generation innov tion with extensive models.</p>
-            </div>
-            <div class="footer__block1-item">
-                <img src="./img/icons/quality.svg" class = "footer__block1-item-image" alt="">
-                <p class="footer__block1-item-text1">Quality assurance</p>
-                <p class="footer__block1-item-text2">Worldwide delivery on all. Authorit tively morph next-&nbsp;generation innov tion with extensive models.</p>
-            </div>
+        <a href="#" class=featured__container-browse>Browse All Products</a>
+    </section>        
+
+    <section class="services">
+        <h1 class="services__title">Services</h1>
+        <div class="services__item services__delivery">
+            <img src="./img/icons/delivery.svg" class = "services__item-image" alt="Delivery">
+            <p class="services__item-text1">Free Delivery</p>
+            <p class="services__item-text2">Worldwide delivery on all. Authorit tively morph next-&nbsp;generation innov tion with extensive models.</p>
         </div>
+        <div class="services__item services__sales">
+            <img src="./img/icons/sales.svg" class = "services__item-image" alt="">
+            <p class="services__item-text1">Sales & discounts</p>
+            <p class="services__item-text2">Worldwide delivery on all. Authorit tively morph next-&nbsp;generation innov tion with extensive models.</p>
+        </div>
+        <div class="services__item services__quality">
+            <img src="./img/icons/quality.svg" class = "services__item-image" alt="">
+            <p class="services__item-text1">Quality assurance</p>
+            <p class="services__item-text2">Worldwide delivery on all. Authorit tively morph next-&nbsp;generation innov tion with extensive models.</p>
+        </div>
+    </section>
+
+
+    <footer class ="footer">
         <div class="footer__block2">
             <div class="footer__block2-overlay">
                 <div class="footer__block2-container">
@@ -255,7 +268,7 @@
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
+</body>
 </html>
