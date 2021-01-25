@@ -1,0 +1,69 @@
+@mixin w-content {
+    width: $desktop-content;
+    margin: 0 auto;
+}
+
+@mixin w-content-padding {
+    width: $desktop-content;
+    margin: 0 auto;
+    padding: 0 230px 0 230px;
+}
+
+//удалить
+@mixin flex-ac {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-align-center {
+    display: flex;
+    align-items: center;
+}
+
+//удалить
+@mixin flex-sb-ac {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flex-space-between-align-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin display-none {
+    display: none;
+}
+
+@mixin breadcrumbs {
+    &-list {
+        list-style: none;
+    }
+    &-item {
+        text-transform: uppercase;
+        display: inline-block;
+        color: #636363;
+
+        &:not(:last-child) {
+            &::after {
+                content: " /\00a0";
+            }
+
+            &:hover span{
+                border-bottom: 1px solid #000;
+                margin-bottom: -1px;
+            }
+        }
+
+        &:last-child {
+            @include color-pink;
+            font-weight: 700;
+        }
+    }
+}
+
+@mixin color-pink {
+    color: #F16D7F;
+}
