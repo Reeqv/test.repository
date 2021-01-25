@@ -16,14 +16,12 @@ body {
 .main-header {
     display: none;
 }
-//ИСПРАВИТЬ!!!!!
+
 section,
 header,
 footer,
 nav,
 h1,
-h2,
-h3,
 p {
     margin: 0 auto;
     padding: 0;
@@ -71,8 +69,6 @@ ul {
     visibility: visible;
 }
 
-@import 'brand';
-@import 'deals';
-@import 'featured';
-@import 'services';
 @import 'footer';
+@import 'headline';
+@import 'registration';

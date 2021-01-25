@@ -17,19 +17,19 @@
 .services__list-item{
     flex-grow: 1;
     padding: 103px 0 103px 0;
-}
-.services__list-item-text{
     color: $white;
-    &:nth-child(2n){
-        font-size: 20px;
-        line-height: 24px;
-        margin: 28px 0 16px 0;
-    }
-    &:nth-child(2n-1){
+}
+
+.services__list-item-title{
+  font-size: 20px;
+  line-height: 24px;
+  margin: 28px 0 16px 0;
+}
+
+.services__list-item-text{
         font-weight: 300;
         font-size: 14px;
         line-height: 17px;
-    }
 }
   .services__block1 {
     margin: 0 auto;

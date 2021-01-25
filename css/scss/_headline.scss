@@ -1,0 +1,23 @@
+.headline{
+    width: 71%;
+    padding: 0 14.5% 0 14.5%;    
+    height: 148px;
+    background-color: #F8F3F4;
+}
+.headline__title{
+    width: 100%;
+    margin: 0 auto;
+    line-height: 148px;
+    text-align: left;
+    font-size: 24px;
+    color: #F16D7F;
+    text-transform: uppercase;
+}
+.headline__nav{
+    font-weight: 300;
+    font-size: 14px;
+    text-align: right;
+    padding: 0;
+    width: 100%;
+    @include breadcrumbs;
+}

@@ -16,14 +16,12 @@ body {
 .main-header {
     display: none;
 }
-//ИСПРАВИТЬ!!!!!
+
 section,
 header,
 footer,
 nav,
 h1,
-h2,
-h3,
 p {
     margin: 0 auto;
     padding: 0;
@@ -70,9 +68,15 @@ ul {
 .header:hover .nav {
     visibility: visible;
 }
+.headline{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.catalog__caption {
+    display: flex;
+}
 
-@import 'brand';
-@import 'deals';
-@import 'featured';
-@import 'services';
 @import 'footer';
+@import 'headline';
+@import 'featured';

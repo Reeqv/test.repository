@@ -1,7 +1,6 @@
 .header{
-    @include flex-sb-ac;
+    @include flex-space-between-align-center;
     width: $desktop-content;
-    position: absolute;
     top: 0px;
     background-color: #222222;
     height: 75px;
@@ -14,7 +13,7 @@
     margin-left: 41px;
 }
 .header__list{
-    @include flex-sb-ac;
+    @include flex-space-between-align-center;
 }
 .header__list-item{
     margin-left: 33px;

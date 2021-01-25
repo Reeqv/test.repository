@@ -1,20 +1,23 @@
-.brand{
-    padding-top: 75px;
+.brand {
     height: 764px;
     @include flex-sb-ac;
     width: $desktop-width;
 }
-.brand__image{
+
+.brand__image {
     width: 50%;
+    background: rgba(113, 103, 105, 0.08);
 }
-.brand__title{
+
+.brand__title-container {
     width: 50%;
     height: 100%;
     background-color: #F1E4E6;
     margin: 0;
-    
+
 }
-.brand__title-text1{
+
+.brand__title {
     font-weight: 900;
     font-size: 48px;
     line-height: 58px;
@@ -26,7 +29,8 @@
     margin-top: 45%;
     padding-left: 16px;
 }
-.brand__title-text2{
+
+.brand__title-text {
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
@@ -36,5 +40,5 @@
     border-left: 12px solid #F16D7F;
     margin: 0 0 0 64px;
     padding-left: 16px;
-   
+
 }
